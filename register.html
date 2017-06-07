@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portal</title>
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="css/image/other/ITIS.png" class="image-kpfu"></a>
+					<ul class="nav navbar-nav lang nones">
+						<li><a href="#"><img src="css/image/icon/sms.png" class="sms"><span class="badge">7</span></a></li>
+						<li><a href="#"><img src="css/image/icon/ring.png" class="ring"><span class="badge badg">7</span></a></li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse header" id="myNavbar">
+					<ul class="nav navbar-nav lang none">
+						<li><a href="#"><img src="css/image/icon/sms.png" class="sms"><span class="badge">7</span></a></li>
+						<li><a href="#"><img src="css/image/icon/ring.png" class="ring"><span class="badge badg">7</span></a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" class="lang">EN</a></li>
+						<li><a href="#" class="lang">RU</a></li>
+						<li><input type="search" name="q" placeholder="" class="search"></li>
+						<li class="color-font"><a href="#">
+							<img src="css/image/other/4-user.png" class="user">
+						</a></li>
+						<li class="lang"><a href="#" data-toggle="modal" data-target="#myModal">Вход</a></li>
+						<!-- Modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+
+								<!-- Modal content-->
+								<div class="modal-content qwasz">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Вход</h4>
+									</div>
+									<div class="modal-body">
+										<form class="form-style">
+											Логин<br>
+											<input type="text" name="login" style="margin-bottom: 10px;"><br>
+											Пароль<br>
+											<input type="password" name="password"><br>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="button-news btn-primary save" data-dismiss="modal">Войти</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="side-menu">
+			<div class="col-xs-2 menu header">
+				<ul class="text-menu">
+					<li><a href="index.html"><img src="css/image/icon/home.png" class="user search icons"><p class="menu-p">Главная</p></a></li>
+					<li><a href="profile.html"><img src="css/image/icon/profile.png" class="user search icons"><p class="menu-p">Профиль</p></a></li>
+					<li><a href="calendar.html"><img src="css/image/icon/calendar.png" class="user search icons"><p class="menu-p">Календарь</p></a></li>
+					<li><a href="materials.html"><img src="css/image/icon/materials.png" class="user search icons"><p class="menu-p">Материалы</p></a></li>
+					<li><a href="interview.html"><img src="css/image/icon/pol.png" class="user search icons"><p class="menu-p">Опросы</p></a></li>
+					<li><a href="support.html"><img src="css/image/icon/support.png" class="user search icons"><p class="menu-p">Поддержка</p></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-offset-2 center-block">
+			<div class="container white-center scrl">
+				<div class="row scrl" style="overflow-y: scroll; height: 80vh;">
+					<form>
+					<h2 style="text-align: center;">Регистрация нового пользователя</h2>
+						<div class="form-group">
+							<label for="lastname">Фамилия:</label>
+							<input type="text" class="form-control" id="lastname">
+						</div>
+						<div class="form-group">
+							<label for="name">Имя:</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="form-group">
+							<label for="middlename">Отчество:</label>
+							<input type="text" class="form-control" id="middlename">
+						</div>
+						<div class="form-group">
+							<label for="tel">Номер телефона:</label>
+							<input type="tel" class="form-control" id="tel">
+						</div>
+						<div class="form-group">
+							<h4>Выберите роль:</h4>
+						</div>
+						<div class="form-group">
+							<label class="checkbox-inline" ><input type="checkbox" name="role" value="ADMIN">Администратор</label>
+							<label class="checkbox-inline"><input type="checkbox" name="role" value="STUDENT">Студент</label>
+							<label class="checkbox-inline"><input type="checkbox" name="role" value="METHODIST">Методист</label>
+							<label class="checkbox-inline"><input type="checkbox" name="role" value="DECAN">Сотрудник деканата</label>
+							<label class="checkbox-inline"><input type="checkbox" name="role" value="TEACHER">Преподаватель</label>
+						</div>
+						<div class="form-group">
+							<label for="sel1">Выберите группу:</label>
+							<select class="form-control" id="sel1">
+								<option selected value="">Не указано</option>
+								<option>11-601</option>
+								<option>11-602</option>
+								<option>11-603</option>
+								<option>11-604</option>
+								<option>11-605</option>
+								<option>11-606</option>
+								<option>11-607</option>
+								<option>11-608</option>
+								<option>11-501</option>
+								<option>11-502</option>
+								<option>11-503</option>
+								<option>11-504</option>
+								<option>11-505</option>
+								<option>11-506</option>
+								<option>11-507</option>
+								<option>11-508</option>
+								<option>11-401</option>
+								<option>11-402</option>
+								<option>11-403</option>
+								<option>11-404</option>
+								<option>11-405</option>
+								<option>11-406</option>
+								<option>11-407</option>
+								<option>11-408</option>
+								<option>11-301</option>
+								<option>11-302</option>
+								<option>11-303</option>
+								<option>11-304</option>
+								<option>11-305</option>
+								<option>11-306</option>
+								<option>11-307</option>
+								<option>11-308</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+							<label for="pwd">Пароль:</label>
+							<input type="password" class="form-control" id="pwd">
+						</div>
+						<div class="form-group">
+							<label for="pwd">Подтверждение пароля:</label>
+							<input type="password" class="form-control" id="pwd">
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-default">Зарегистрировать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-12 header footer">
+				<div style="float: left;">Корпоративный портал Высшей школы ИТИС</div>
+				<div style="float: right;">2017</div>
+			</div>
+		</div> <!-- wrapper close -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="css/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+	</html>
